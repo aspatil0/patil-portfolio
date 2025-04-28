@@ -17,7 +17,7 @@ This is a responsive **Personal Portfolio Website** built using **HTML**, **CSS*
 
 ## 🛠️ Tech Stack
 
-- HTML5
+- HTML5 
 - CSS3
 - JavaScript (Vanilla)
 - Bootstrap 5
