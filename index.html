@@ -1,206 +1,300 @@
-<html>
-    <head>
-        <title>
-            ADITYA'S PORTFOLIO
-        </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav style="text-decoration: none; text-align: center; display: flex;justify-content: center;">
-            <h3><a href="#home">HOME</a></h3>
-            <h3><a href="#aboutme">ABOUT-ME</a></h3>
-            <h3><a href="#CERTIFICATION">CERTIFICATION</a></h3>
-            <h3><a href="#projects">PROJECTS</a></h3>
-            <h3><a href="#skills">SKILLS</a></h3>
-        </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Portfolio</title>
+    <link rel="stylesheet" href="s">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+        }
 
-        <div id="hero">
-             <h1 style="text-transform: uppercase;" class="two">hi , I Am  <span style="color: rgb(255, 0, 0); background-color: transparent;"> Adityaraj Patil</span>
-            <br>
-                 From Pune </h1> <br>
-                 <h1 class="one">FULL STACK DEVELOPER</h1>
-                 <br>
-                 <br>
-                 <div class="details" >
-                    <p class="four">Hi, I’m Adityaraj Patil, a passionate full-stack web developer, tech enthusiast, and the CEO of DevineTech  I love building  innovative tech solutions, from websites to IoT projects, and sharing my knowledge through community leadership and content creation. Let’s connect and build something great together!</p>
+        body {
+            background: #f5f5f5;
+        }
 
-                 </div>
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            background: black;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        #hero {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .details p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.2rem;
+        }
+
+        #hero-2, #CERTIFICATION, #projects, #skills {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #aboutme p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        .cer, .project-container, .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .cer img, .project-card img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .project-card .content {
+            padding: 20px;
+            background: black;
+            color: white;
+        }
+
+        .project-card button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            background: tomato;
+            color: white;
+            font-size: 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .project-card button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        button, .btn button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            border-radius: 30px;
+            margin-top: 20px;
+            border: none;
+            background: tomato;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn button a, .bttn button a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.1rem;
+        }
+
+        .skills-container button {
+            background: bisque;
+            padding: 40px;
+            border-radius: 20px;
+            font-size: 20px;
+            min-width: 250px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .skills-container button a {
+            text-decoration: none;
+            color: black;
+        }
+
+        hr {
+            border: 4px solid red;
+            margin: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                gap: 15px;
+            }
+
+            #hero h1 {
+                font-size: 2rem;
+            }
+
+            .details p, #aboutme p {
+                font-size: 1rem;
+            }
+
+            .project-card, .cer img {
+                max-width: 90%;
+            }
+
+            .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#aboutme">ABOUT ME</a>
+        <a href="#CERTIFICATION">CERTIFICATION</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#skills">SKILLS</a>
+
+       <a href="/resume/SAP_EDITED_RESUME(2.0).pdf" download="ADITYARESUME"> [ DOWNLOAD RESUME ]</a>
+    </nav>
+
+    <section id="hero">
+        <h1>Hi, I am <span style="color:red;">Adityaraj Patil</span><br>From Pune</h1>
+        <h1>FULL STACK DEVELOPER</h1>
+        <div class="details">
+            <p>Hi, I’m Adityaraj Patil, a passionate full-stack web developer, tech enthusiast, and the CEO of DevineTech. 
+               I love building innovative tech solutions, from websites to IoT projects, and sharing my knowledge through 
+               community leadership and content creation. Let’s connect and build something great together!</p>
         </div>
-        <!-- ----------------------------------------------------------------- -->
-        <div id="hero-2" >
-            <h1 class="three" style="text-decoration: underline solid yellow;">ABOUT-ME</h1>
-            <div id="aboutme">
-                <p>
-                    Name: Adityaraj Patil <br>
-                    Location: Pune, Maharashtra <br>
-                    Education: Third-year student at Trinity College, Pune <br> <br>
-                    Department : Computer Science Engineering <br> 
-                    <br>
-                    Roles: <br>
-                    1] Vice President of the Third-Year Core Community <br>
-                    2] Web Development Lead for GDSC 2024-25 <br>
-                    3] Founder & CEO Devinetech Solutions<br>
+    </section>
 
-                    
-                </p>
-            </div>
+    <section id="hero-2">
+        <h1 style="text-decoration: underline solid yellow;">ABOUT ME</h1>
+        <div id="aboutme">
+            <p>
+                Name: Adityaraj Patil <br>
+                Location: Pune, Maharashtra <br>
+                Education: Third-year student at Trinity College, Pune <br><br>
+                Department: Computer Science Engineering <br><br>
+                Roles:<br>
+                1. Vice President of the Third-Year Core Community <br>
+                2. Web Development Lead for GDSC 2024-25 <br>
+                3. Founder & CEO DevineTech Solutions <br>
+                <button><a href="resume/SAP_EDITED_RESUME(2.0).pdf" download="ADITYA'S RESUME" style="color: black; text-decoration: none; font-weight: 700;">DOWNLOAD MY RESUME</a></button>
+            </p>
+        </div>
+    </section>
+
+    <section id="CERTIFICATION">
+        <h1>CERTIFICATES LIST</h1>
+
+        <div class="cer">
+            <img src="certificates/c++ udemy.png" alt="C++ Certificate">
+            <img src="myresultanaysis.png" alt="Engineering Result" style="border: 5px solid red;">
+            <img src="certificates/cdac Ar-vr.png" alt="AR-VR Certificate">
+            <img src="certificates/nextwave-ai.png" alt="NextWave AI Certificate">
+            <img src="certificates/MERN-UDEMY.png" alt="NextWave AI Certificate">
+
+            <img src="certificates/prompt-engi.png" alt="Prompt Engineering Certificate">
+            <img src="certificates/gdg cer.png" alt="GDG Certificate">
+            <img src="certificates/WEB-DEV-UDEMY.png" alt="Prompt Engineering Certificate">
+            <img src="certificates/JAVA-UDEMY.png" alt="Prompt Engineering Certificate">
+
         </div>
 
-<br><br>
-
-        <!-- ------------------------------------------------------- -->
-
-
-        <div id="CERTIFICATION">
-            <div class="start">
-                <h1 class="five">CERTIFICATES LIST</h1>
-                <div class="mine" style=" background-color: rgb(0, 0, 0);text-align: center;">
-                    <h2 style="padding: 15px; text-align: center;margin-top: 25px;color: tomato;background-color: transparent;"> ENGINEERING RESULT CHART</h2>
-                                   </div>
-            </div>
-
-            <div class="cer">
-                <a href="" class="a"><img src="/certificates/c++ udemy.png" alt="" height="280px"></a>
-                <img src="myresultanaysis.png" alt="" style="padding: 25px; background-color: white;border: 5px solid rgb(255, 0, 0); width: 400px;" >
-
-                <img src="/certificates/cdac Ar-vr.png" alt="">
-                <img src="/certificates/gdg cer.png" alt="">
-                <img src="/certificates/nextwave-ai.png" alt="">
-                <img src="/certificates/prompt-engi.png" alt="">
-                
-                
-
-            </div>
-
-            <div class="btn" style=" text-align: center;"> <button style=" padding: 30px; background-color: rgb(255, 255, 255);color: black; border-radius: 35px;"> <a href="" style="background-color: white; color: black; text-decoration: none; font-size: 20px;" id="b">SEE 17+ MORE</a></button></div>
+        <div class="btn">
+            <button><a href="https://www.linkedin.com/in/adityaraj-patil-6a6525252/">SEE LINKDIN FOR MORE</a></button>
         </div>
-        <br><br><br><br>
-        <hr style="border: 5px solid rgb(255, 0, 0);">
+    </section>
 
-        <!-- ------------------------------------------------------- PROJEVTS SECTION STARTS HERE -->
+    <hr>
 
-        
-        <div id="projects" >
+    <section id="projects">
+        <h1>PROJECTS</h1>
 
-            <h1 id="seven"> PROJECTS</h1>
+        <div class="project-container">
 
-            <div id="aa" style="display: flex; justify-content: center;">
-
-                <div class="aa1" style="background-color: aliceblue; width: 500px; height: 420px; margin: 90px;">
-                    <img src="/projects/dt-1.png" alt="" width="500px" height="300px">
-                    
-                    <div class="aa2" style=" background-color: rgb(0, 0, 0);"><p style="text-align: center; color: aliceblue;">DEVINETCEH WEBISTE</p>
-                        <br>
-                        
-Tech Stack: HTML, CSS, JavaScript, PHP, MySQL<br>
-Features: Service listing, internship showcase, project portfolio<br>
-Responsive design with dynamic content management<br>
-Secure access to certificates and intern details
-
-                    </div>
-                    <div class="btn" style="text-align: center;"><button style="margin:10px; padding: 8px;"><a href="https://devine-tech.netlify.app/" target="_blank">VISIT WEBSITE</a></button>
-                    </div>
+            <div class="project-card">
+                <img src="projects/dt-1.png" alt="DevineTech Website">
+                <div class="content">
+                    <p>DEVINETECH WEBSITE</p>
+                    Tech Stack: HTML, CSS, JavaScript, PHP, MySQL<br>
+                    Features: Service listing, internships, portfolio<br>
+                    Responsive design, dynamic content
                 </div>
-
-            <div id="aa" style="display: flex; justify-content: center;">
-                <div class="aa1" style="background-color: aliceblue; width: 500px; height: 400px; margin: 90px;">
-                    <img src="/projects/tesnary.png" alt="" width="500px" height="300px">
-                    
-                    <div class="aa2" style=" background-color: rgb(0, 0, 0);"><p style="text-align: center; color: aliceblue;">E-TESNARY WEBISTE</p>
-                        <br> 
-                        Tech Stack: HTML, CSS, JavaScript, React, Node.js, MongoDB<br>
-                        Features: User authentication, product catalog, online ordering<br>
-                        Responsive UI with dynamic product updates<br>
-                        Secure payment gateway integration and order tracking
-                    </div>
-                
-                <div class="btn" style="text-align: center;"><button style="margin: 10px; padding: 8px;"><a href="https://tesnary.netlify.app/" target="_blank">VISIT WEBSITE</a></button>
+                <div style="text-align: center;">
+                    <button><a href="https://devine-tech.netlify.app/" target="_blank">VISIT WEBSITE</a></button>
                 </div>
-                </div>
-        </div>
-
-
-        
-        </div>
-
-        <div class="#op" style="display: flex; justify-content: center;">
-        <div id="aa">
-            <div class="aa1" style="background-color: aliceblue; width: 500px; height: 400px; margin: 90px;">
-                <img src="/projects/ROBOTIC ARM.png" alt="" width="500px" height="300px">
-                
-                <div class="aa2" style=" background-color: rgb(0, 0, 0);"><p style="text-align: center; color: aliceblue;">Robotic-Arm</p>
-                    <br> 
-                    The robotic arm uses 4 servo motors controlled by an Arduino Uno for precise movement.<br>
-It can detect colors using the TCS3200 color sensor and pick up objects based on color.<br>
-The system is programmed to sort colored blocks efficiently and accurately.<br>
-It is designed for tasks requiring automation and color-based object handling.<br>
-
-                </div>
-            
-            
             </div>
-    </div>
-    <div class="#op">
-        <div id="aa" style="display: flex; justify-content: center;">
-            <div class="aa1" style="background-color: aliceblue; width: 500px; height: 400px; margin: 90px;">
-                <img src="/projects/women safety.jpeg" alt="" width="500px" height="300px">
-                
-                <div class="aa2" style=" background-color: rgb(0, 0, 0);"><p style="text-align: center; color: aliceblue;">Women Safety Device</p>
-                    <br> 
-                    Features: The device includes live location tracking, a call button, a buzzer, and a shock system for self-defense.<br>
-                    Functionality: On pressing the panic button, it sends an SOS location to registered family members, makes a phone call, activates a shock feature if someone touches the user, and sounds a buzzer.<br>
-                    Components: SIM900A module, Arduino Uno, GPS NEO6M module, and a panic button.<br>
-                    Purpose: Ensures safety by enabling quick responses and self-defense during emergencies.
+
+            <div class="project-card">
+                <img src="projects/tesnary.png" alt="Tesnary Website">
+                <div class="content">
+                    <p>E-TESNARY WEBSITE</p>
+                    Tech Stack: HTML, CSS, JavaScript, React, Node.js, MongoDB<br>
+                    Features: Authentication, ordering, dynamic products
                 </div>
-            
-            
+                <div style="text-align: center;">
+                    <button><a href="https://tesnary.netlify.app/" target="_blank">VISIT WEBSITE</a></button>
+                </div>
             </div>
-    </div>
-</div>
+
+            <div class="project-card">
+                <img src="projects/ROBOTIC ARM.png" alt="Robotic Arm">
+                <div class="content">
+                    <p>ROBOTIC ARM</p>
+                    Arduino-based color-detecting and sorting robotic arm using TCS3200 and 4 servo motors.
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="projects/women safety.jpeg" alt="Women Safety Device">
+                <div class="content">
+                    <p>WOMEN SAFETY DEVICE</p>
+                    Features: Live tracking, call button, buzzer, shock system using Arduino Uno, SIM900A, GPS NEO6M.
+                </div>
+            </div>
 
         </div>
 
-        <br> <br> <br> <br>
-        <div class="bttn" style=" margin-top: 30px; text-align: center;">
-    <button style="padding: 25px;background-color: aliceblue; border-radius: 25px;"> <a href="" style="background-color: aliceblue; color: black;text-decoration: none; font-size: 20px;"> SEE 24+ MORE PROJECTS </a></button></div>
-<br><br><br><br>
-        <hr style="border: 5px solid rgb(244, 0, 0);">
+        <div class="bttn">
+            <button><a href="https://github.com/aspatil0" target="_blank">CHECK MY GITHUB FOR MORE PROJECTS</a></button>
+        </div>
+    </section>
 
+    <hr>
 
+    <section id="skills">
+        <h1>MY SKILLS</h1>
 
-<!-- --------------------------------------------------------SKILLS SECTION STARTS HERE ------------------------------------------ -->
+        <div class="skills-container">
+            <button><a href="#">WRITER <br> AUTHOR OF 4 BOOKS</a></button>
+            <button><a href="#">ARTIST <br> COMMAND IN ANIME ART</a></button>
+            <button><a href="#">PUBLIC SPEAKING <br> 9+ SEMINARS</a></button>
+            <button><a href="#">UI/UX DESIGNER</a></button>
+        </div>
+    </section>
 
-
-
-<div id="skills">
-    <h1 id="EIG">MY SKILLS </h1>
-
-    <div class="buttons" style="text-align: center;" >
-        <br><br><br>
-<button style="padding: 50px; border-radius: 25px; background-color: bisque; font-size: 25px;"><a href="" style="background-color: transparent; color: black; text-decoration: none;"><span>WRITER</span>  <br> AUTHOR OF 4 BOOKS </a></button> 
-<button  style="padding: 50px; border-radius: 25px; background-color: bisque; font-size: 25px;"><a href=""style="background-color: transparent; color: black; text-decoration: none;"> <span> ARTIST</span> <br> COMMAND IN ANIME ART </a></button>
-<button  style="padding: 50px; border-radius: 25px; background-color: bisque; font-size: 25px;"><a href="" style="background-color: transparent; color: black; text-decoration: none; text-transform: uppercase;"> <span>Public Speaking</span> <br> CONDUCT 9+ SEMINARS</a></button>
-<button  style="padding: 50px; border-radius: 25px; background-color: bisque; font-size: 25px;"><a href=""style="background-color: transparent; color: black; text-decoration: none;"><span>UI/UX DESIGN </span><br> DESIGNED 50+ MODELS</a></button>
-
-<br>
-<br>
-
-<button style="padding: 50px; border-radius: 25px; background-color: bisque; font-size: 25px;"><a href="" style="background-color: transparent; color: black; text-decoration: none;text-transform: uppercase;"> <span>Freelancing</span><br> DONE OFFLINE AND ONLINE <br>BOTH FOR WEBSITE BASED PROJECTS </a></button> 
-<button  style="padding: 50px; border-radius: 25px; background-color: bisque; font-size: 25px;"><a href=""style="background-color: transparent; color: black; text-decoration: none; text-transform: uppercase;"> <span>Technical Writing</span><br> 2+ RESEARCH PAPER PUBLISHED <br> USEFUL PATENTS ARE IN PROCESS</a></button>
-<br> <br>
-<button  style="padding: 50px; border-radius: 25px; background-color: bisque; font-size: 25px;"><a href="" style="background-color: transparent; color: black; text-decoration: none; text-transform: uppercase;"><span>Prompt Engineering </span><br> PROMPT MASTER FOR AI LIKE GPT AND GEMINI</a></button>
-
-
-    </div>
-
-</div>
-<br><br><br><br>
-        <hr style="border: 5px solid rgb(244, 0, 0);">
-
-
-
-        <!-- ----------------------------------CONTACT-US SECTION=--------------------- -->
-
-
-    </body>
+</body>
 </html>
