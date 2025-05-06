@@ -7,7 +7,7 @@ This is a responsive **Personal Portfolio Website** built using **HTML**, **CSS*
 ## 🚀 Features  
 
 - ✅ Responsive layout for all devices
-- 🎨 Clean and modern UI design with Bootstrap 5   s
+- 🎨 Clean and modern UI design with Bootstrap 5 
 - 💻 Project showcase with GitHub/live links
 - 👤 About Me section with skill highlights
 - 📬 Contact form with Mail API integration
